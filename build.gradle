@@ -14,7 +14,7 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()//test
+        jcenter()//test test
     }
 }
 
