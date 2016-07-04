@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <TextView
+        android:id="@+id/extra_textView_title"
+        android:text="title"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/cf_container"
+        android:layout_below="@id/extra_textView_title"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:id="@+id/extra_imageView_one"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent" />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/extra_imageView_two"
+            android:scaleType="centerCrop"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent" />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/extra_imageView_three"
+            android:scaleType="centerCrop"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:text="source"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/extra_textView_source"
+        android:layout_below="@id/cf_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="source"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/extra_textView_time"
+        android:layout_below="@id/cf_container"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

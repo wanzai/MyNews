@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/cf_imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:roundedCornerRadius="10dp"
+            android:padding="5dp"
+            app:actualImageScaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:id="@+id/cf_textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/cf_imageView"
+            android:text="name"
+            android:textSize="15sp" />
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/cf_textView_digest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cf_imageView"
+            android:text="introduce"
+            android:maxLines="4"
+            android:ellipsize="end" />
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/cf_textView_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="keywords" />
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/cf_textView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="keywords" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
